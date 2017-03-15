@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">VK API</string>
+    <string name="photo">photo</string>
+    <string name="auth_wd">Auth Success</string>
+    <string name="auth_fail">Auth fail:</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+</resources>
