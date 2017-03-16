@@ -3,9 +3,12 @@ package com.whrsmxmx.vk_api_test;
 import android.app.Application;
 import android.widget.Toast;
 
+import com.crashlytics.android.Crashlytics;
 import com.vk.sdk.VKAccessToken;
 import com.vk.sdk.VKAccessTokenTracker;
 import com.vk.sdk.VKSdk;
+
+import io.fabric.sdk.android.Fabric;
 
 /**
  * Created by Max on 13.03.2017.
@@ -25,6 +28,7 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        Fabric.with(this, new Crashlytics());
         vkAccessTokenTracker.startTracking();
         VKSdk.initialize(this);
     }
